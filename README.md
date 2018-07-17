@@ -9,7 +9,7 @@ Demo stylizer
 
 # Set up style transfer server on Azure
 
-We are using [NVIDIA's FastPhotoStyle implementation](https://github.com/NVIDIA/FastPhotoStyle), which requires a very specific environment, with Linux, an NVIDIA GPU, a particular version of CUDA, and Anaconda 2, amongst other things. Therefore, it is simpler to set it up in an ephemeral VM than trying to install it locally. Here are instructions on how you can set up FastPhotoStyle as a REST API web service on Azure:  
+In the following example, we will use [NVIDIA's FastPhotoStyle implementation](https://github.com/NVIDIA/FastPhotoStyle), which requires a very specific environment, with Linux, an NVIDIA GPU, a particular version of CUDA, and Anaconda 2, amongst other things. Therefore, it is simpler to set it up in an ephemeral VM than trying to install it locally. Here are instructions on how you can set up FastPhotoStyle as a REST API web service on Azure:  
 
 First, spin up a "Data Science Virtual Machine" in Azure
 
@@ -40,7 +40,7 @@ Take note of which IP address the server runs on. In the following example, we w
 
 # Usage
 
-First, add content images to data/content_images and add style images to data/style_images.
+First, add content images to data/content_images and add style images to data/style_images. Label files, made with the [labelme tool](https://github.com/wkentaro/labelme), are optional.
 
 Note: The following command(s) must be run in the local environment, i.e. not on the style transfer server on Azure.
 
