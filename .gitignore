@@ -111,4 +111,4 @@ venv.bak/
 # Data
 data/content_images/*.png
 data/style_images/*.png
-data/stylized_images/*.png
+data/stylized_images/**/*.png
