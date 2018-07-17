@@ -20,7 +20,7 @@ def get_label_filename(filename):
 
 
 def run(content_image_dir, style_image_dir, host_name):
-    """Iterate over the images in the folder, and find all combinations of content+style
+    """Iterate over the images in the two folders, and find all combinations of content+style
 
     Generate a stylized image for each combination, and store the result.
 
