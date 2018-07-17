@@ -1,6 +1,6 @@
 # Demo style
 
-Demo stylizer
+A tiny project where I played around with video/demo stylization.
 
 # Set up local Python environment
 
