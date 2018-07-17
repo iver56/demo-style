@@ -45,6 +45,12 @@ First, add content images to data/content_images and add style images to data/st
 Note: The following command(s) must be run in the local environment, i.e. not on the style transfer server on Azure.
 
 To apply stylization to every content/style combination in the dataset, run a command like this (but replace the host IP example with the correct IP address!):  
-`python -m app.stylizer.stylize --host 54.55.56.57`
+`python -m app.scripts.stylize --host 54.55.56.57`
 
 The resulting stylized images are stored in a separate folder: data/stylized_images
+
+## Convert stylized images to video
+
+Note that this script assumes that `ffmpeg.exe` is installed and added to `PATH`.
+
+`python -m app.scripts.convert_images_to_video`

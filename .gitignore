@@ -112,3 +112,5 @@ venv.bak/
 data/content_images/*.png
 data/style_images/*.png
 data/stylized_images/**/*.png
+data/tmp/images.txt
+data/video_output/*.mp4
