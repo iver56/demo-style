@@ -107,3 +107,8 @@ venv.bak/
 
 # IntelliJ IDEA
 .idea
+
+# Data
+data/content_images/*.png
+data/style_images/*.png
+data/stylized_images/*.png
