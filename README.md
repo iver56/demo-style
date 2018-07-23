@@ -45,6 +45,6 @@ The resulting stylized images are stored in a separate folder: data/stylized_ima
 
 ## Convert stylized images to video
 
-Note that this script assumes that `ffmpeg.exe` is installed and added to `PATH`.
+Note that this script assumes that `ffmpeg` is installed and added to `PATH`.
 
 `python -m app.scripts.convert_images_to_video`

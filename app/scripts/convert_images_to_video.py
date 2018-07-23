@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     subprocess.run(
         [
-            "ffmpeg.exe",
+            "ffmpeg",
             "-r", "{}".format(args.framerate),
             "-f", "concat",
             "-safe", "0",
