@@ -114,3 +114,4 @@ data/style_images/*.png
 data/stylized_images/**/*.png
 data/tmp/images.txt
 data/video_output/*.mp4
+data/downloaded_videos/**/*.mp4
