@@ -23,4 +23,6 @@ for video_collection_name in video_collections:
         if os.path.isfile(file_path):
             print('\nSkipping {} because it already exists'.format(filename_stem))
         else:
-            YouTube(video_url).streams.first().download(output_path=output_path, filename=filename_stem)
+            YouTube(video_url).streams.first().download(
+                output_path=output_path, filename=filename_stem
+            )
