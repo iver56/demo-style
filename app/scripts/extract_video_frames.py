@@ -23,6 +23,18 @@ for video_collection_name in video_collections:
     for video_file_path in tqdm(video_file_paths, desc='Extracting frames from {}'.format(video_collection_name)):
         path = Path(video_file_path)
 
+        first_image_path = os.path.join(
+            path.parent,
+            path.stem,
+            path.stem + '_00001.jpg',
+        )
+        if os.path.isfile(first_image_path):
+            print(
+                '\nSkipping {} because frames seem'
+                ' to be extracted for this video already'.format(path.stem)
+            )
+            continue
+
         # Make a folder for the frames, if the folder does not already exist
         os.makedirs(os.path.join(path.parent, path.stem), exist_ok=True)
 
