@@ -109,8 +109,11 @@ venv.bak/
 .idea
 
 # Data
-data/content_images/*.png
-data/style_images/*.png
+data/content_images/**/*.png
+data/content_images/**/*.jpg
+data/style_images/**/*.png
+data/style_images/**/*.jpg
+data/style_images/**/*.jpeg
 data/stylized_images/**/*.png
 data/tmp/images.txt
 data/video_output/*.mp4
