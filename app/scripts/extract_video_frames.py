@@ -15,6 +15,7 @@ Extract frames from downloaded videos, and store them as JPG files.
 video_collections = {
     'colorful_videos': get_video_file_paths(os.path.join(DOWNLOADED_VIDEOS_DIR, 'colorful_videos')),
     'greyscale_videos': get_video_file_paths(os.path.join(DOWNLOADED_VIDEOS_DIR, 'greyscale_videos')),
+    'ninjadev_videos': get_video_file_paths(os.path.join(DOWNLOADED_VIDEOS_DIR, 'ninjadev_videos')),
 }
 
 for video_collection_name in video_collections:
