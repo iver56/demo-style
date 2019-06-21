@@ -121,3 +121,4 @@ data/downloaded_videos/**/*.mp4
 data/downloaded_videos/**/*.jpg
 data/downloaded_videos/**/*.png
 data/plots/*.png
+data/**/*.pth

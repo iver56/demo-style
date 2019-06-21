@@ -10,6 +10,7 @@ from app.utils.youtube import parse_youtube_external_id
 video_collections = {
     'colorful_videos': read_lines(os.path.join(VIDEO_LISTS_DIR, 'colorful_videos.txt')),
     'greyscale_videos': read_lines(os.path.join(VIDEO_LISTS_DIR, 'greyscale_videos.txt')),
+    'ninjadev_videos': read_lines(os.path.join(VIDEO_LISTS_DIR, 'ninjadev_videos.txt')),
 }
 
 for video_collection_name in video_collections:
@@ -18,6 +19,7 @@ for video_collection_name in video_collections:
         external_id = parse_youtube_external_id(video_url)
 
         output_path = os.path.join(DOWNLOADED_VIDEOS_DIR, video_collection_name)
+        os.makedirs(output_path, exist_ok=True)
         filename_stem = external_id
         file_path = os.path.join(output_path, filename_stem + '.mp4')
         if os.path.isfile(file_path):
