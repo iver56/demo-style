@@ -14,8 +14,8 @@ def pil_image_to_base64(image):
         return None
 
     image_buffer = six.BytesIO()
-    image.save(image_buffer, format='PNG')
-    return base64.b64encode(image_buffer.getvalue()).decode('utf-8')
+    image.save(image_buffer, format="PNG")
+    return base64.b64encode(image_buffer.getvalue()).decode("utf-8")
 
 
 def base64_png_image_to_pillow_image(base64_string):
@@ -35,8 +35,11 @@ def get_image_file_paths(image_root_path):
             input_path = os.path.abspath(root)
             file_path = os.path.join(input_path, filename)
 
-            file_extension = filename.split('.')[-1]
-            if file_extension.lower() in ('png', 'jpg', 'jpeg') and '.__label__.' not in filename:
+            file_extension = filename.split(".")[-1]
+            if (
+                file_extension.lower() in ("png", "jpg", "jpeg")
+                and ".__label__." not in filename
+            ):
                 image_file_paths.append(file_path)
 
         break  # prevent descending into subfolders

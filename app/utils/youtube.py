@@ -8,9 +8,9 @@ def parse_youtube_external_id(url):
     """
 
     youtube_regex = (
-        r'(https?://)?(www\.|m\.)?'
-        '(youtube|youtu|youtube-nocookie)\.(com|be)/'
-        '(watch\?.*?(?=v=)v=|embed/|v/|.+\?v=)?([^&=%\?]{11})'
+        r"(https?://)?(www\.|m\.)?"
+        "(youtube|youtu|youtube-nocookie)\.(com|be)/"
+        "(watch\?.*?(?=v=)v=|embed/|v/|.+\?v=)?([^&=%\?]{11})"
     )
 
     youtube_regex_match = re.match(youtube_regex, url)
