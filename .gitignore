@@ -121,6 +121,7 @@ data/downloaded_videos/**/*.mp4
 data/downloaded_videos/**/*.mkv
 data/downloaded_videos/**/*.webm
 data/downloaded_videos/**/*.part
+data/downloaded_videos/**/*.video.f*
 data/downloaded_videos/**/*.jpg
 data/downloaded_videos/**/*.png
 data/plots/*.png
