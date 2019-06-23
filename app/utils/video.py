@@ -13,7 +13,7 @@ def get_video_file_paths(root_path):
             file_path = os.path.join(input_path, filename)
 
             file_extension = filename.split(".")[-1]
-            if file_extension.lower() == "mp4":
+            if file_extension.lower() in ("mp4", "mkv", "webm"):
                 video_file_paths.append(file_path)
 
         break  # prevent descending into subfolders
