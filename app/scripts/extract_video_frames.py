@@ -50,6 +50,7 @@ for video_collection_name in video_collections:
                 "ffmpeg",
                 "-i",
                 "{}".format(path.as_posix()),
+                "-qscale:v", "2",  # JPEG quality (2-31 where 31 is worst)
                 "{}".format(
                     Path(
                         os.path.join(path.parent, path.stem, path.stem + "_%05d.jpg")
