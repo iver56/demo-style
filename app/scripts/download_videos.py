@@ -32,6 +32,9 @@ if __name__ == "__main__":
         "ninjadev_videos": read_lines(
             os.path.join(VIDEO_LISTS_DIR, "ninjadev_videos.txt")
         ),
+        "after_effects_reels": read_lines(
+            os.path.join(VIDEO_LISTS_DIR, "after_effects_reels.txt")
+        ),
     }
 
     for video_collection_name in video_collections:
